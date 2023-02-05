@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment=
+"http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1675015112403">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1675015112404" deploymentId="0" startingWeight="1" 
+binariesURL="$(APP_INSTALL_ROOT)/DESKTOP-M6FFS9UNode01Cell/SampleRestAPI.ear" useMetadataFromBinaries="false" enableDistribution=
+"true" createMBeansForResources="true" reloadEnabled="false" appContextIDForSecurity=
+"href:DESKTOP-M6FFS9UNode01Cell/SampleRestAPI_war" filePermission=".*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755" 
+allowDispatchRemoteInclude="false" allowServiceRemoteInclude="false" asyncRequestDispatchType="DISABLED" standaloneModule="true" enableClientModule=
+"false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1675015112404" enable="true" target="ServerTarget_1675015112404"/>
+    <classloader xmi:id="Classloader_1675015112404" mode="PARENT_FIRST"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1675015112404" deploymentId="1" startingWeight="10000" uri=
+"SampleRestAPI.war" classloaderMode="PARENT_LAST" containsEJBContent="0">
+      <targetMappings xmi:id="DeploymentTargetMapping_1675015112405" target="ServerTarget_1675015112404"/>
+      <classloader xmi:id="Classloader_1675015112405"/>
+    </modules>
+    <properties xmi:id="Property_1675015112404" name="metadata.complete" value="false"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1675015112404" name="server1" nodeName="DESKTOP-M6FFS9UNode01"/>
+</appdeployment:Deployment>
